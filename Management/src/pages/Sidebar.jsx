@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useLocation } from "wouter";
-import { Menu, X, Home, Users, MapPin, DollarSign } from "lucide-react";
+import { Menu, X, Home, Users, MapPin, DollarSign, User } from "lucide-react";
 
 const Sidebar = () => {
   const [location, navigate] = useLocation();
@@ -11,6 +11,7 @@ const Sidebar = () => {
     { icon: Users, label: "Lead Management", path: "/leads" },
     { icon: MapPin, label: "Itineraries", path: "/itineraries" },
     { icon: DollarSign, label: "Billing", path: "/billing" },
+    { icon: User, label: "User Management", path: "/users" }
   ];
 
   return (

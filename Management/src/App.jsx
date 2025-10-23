@@ -4,6 +4,7 @@ import Dashboard from "./pages/Dashboard";
 import LeadManagement from "./pages/LeadManagement";
 import ItineraryGeneration from "./pages/ItineraryGeneration";
 import BillingInvoicing from "./pages/BillingInvoicing";
+import UserManagement from "./pages/UserManagement";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/leads" component={LeadManagement} />
           <Route path="/itineraries" component={ItineraryGeneration} />
           <Route path="/billing" component={BillingInvoicing} />
+          <Route path="/users" component={UserManagement} />
         </Switch>
       </div>
     </div>
